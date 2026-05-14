@@ -1,0 +1,179 @@
+[
+  {
+    "ContainingType": "Practical_Assignment.Controllers.AuthController",
+    "Method": "Login",
+    "RelativePath": "api/auth/login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "Practical_Assignment.DTOs.LoginRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Practical_Assignment.Controllers.AuthController",
+    "Method": "Logout",
+    "RelativePath": "api/auth/logout",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Practical_Assignment.Controllers.AuthController",
+    "Method": "Register",
+    "RelativePath": "api/auth/register",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "Practical_Assignment.DTOs.RegisterRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Practical_Assignment.Controllers.ReportController",
+    "Method": "GetDailySummary",
+    "RelativePath": "api/report/daily-summary",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Practical_Assignment.Controllers.ReportController",
+    "Method": "ExportCsv",
+    "RelativePath": "api/report/export-csv",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Practical_Assignment.Controllers.ReportController",
+    "Method": "GetHistory",
+    "RelativePath": "api/report/history/{studentId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "studentId",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Practical_Assignment.Controllers.ReportController",
+    "Method": "GetSummary",
+    "RelativePath": "api/report/summary",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Practical_Assignment.Controllers.TransactionController",
+    "Method": "Deposit",
+    "RelativePath": "api/transaction/deposit",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "Practical_Assignment.DTOs.DepositRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Practical_Assignment.Controllers.TransactionController",
+    "Method": "Pay",
+    "RelativePath": "api/transaction/pay",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "Practical_Assignment.DTOs.PaymentRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Practical_Assignment.Controllers.TransactionController",
+    "Method": "Transfer",
+    "RelativePath": "api/transaction/transfer",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "Practical_Assignment.DTOs.TransferRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Practical_Assignment.Controllers.WalletController",
+    "Method": "GetBalance",
+    "RelativePath": "api/wallet/balance",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Practical_Assignment.Controllers.WalletController",
+    "Method": "GetProfile",
+    "RelativePath": "api/wallet/profile",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Practical_Assignment.Controllers.WeatherForecastController",
+    "Method": "Get",
+    "RelativePath": "WeatherForecast",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[Practical_Assignment.WeatherForecast, AMS_26840, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "GetWeatherForecast"
+  }
+]
