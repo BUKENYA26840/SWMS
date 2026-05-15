@@ -16,6 +16,7 @@ COPY Properties/ ./Properties/
 COPY Services/ ./Services/
 COPY wwwroot/ ./wwwroot/
 COPY Program.cs .
+COPY WeatherForecast.cs .
 COPY appsettings.json .
 COPY appsettings.Development.json .
 RUN dotnet publish "AMS_26840.csproj" -c Release -o /app/publish
