@@ -10,7 +10,6 @@ COPY Controllers/ ./Controllers/
 COPY Data/ ./Data/
 COPY DTOs/ ./DTOs/
 COPY Middleware/ ./Middleware/
-COPY Migrations/ ./Migrations/
 COPY Models/ ./Models/
 COPY Properties/ ./Properties/
 COPY Services/ ./Services/
