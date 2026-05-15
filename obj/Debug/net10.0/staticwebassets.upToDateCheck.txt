@@ -1,0 +1,6 @@
+wwwroot\css\style.css
+wwwroot\js\app.js
+wwwroot\index.html
+D:\DOT NET\Practical_Assignment\wwwroot\css\style.css
+D:\DOT NET\Practical_Assignment\wwwroot\js\app.js
+D:\DOT NET\Practical_Assignment\wwwroot\index.html
