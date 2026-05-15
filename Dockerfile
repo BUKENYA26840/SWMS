@@ -4,7 +4,20 @@ EXPOSE 8080
 
 FROM mcr.microsoft.com/dotnet/sdk:10.0 AS build
 WORKDIR /src
-COPY . .
+COPY AMS_26840.csproj .
+RUN dotnet restore "AMS_26840.csproj"
+COPY Controllers/ ./Controllers/
+COPY Data/ ./Data/
+COPY DTOs/ ./DTOs/
+COPY Middleware/ ./Middleware/
+COPY Migrations/ ./Migrations/
+COPY Models/ ./Models/
+COPY Properties/ ./Properties/
+COPY Services/ ./Services/
+COPY wwwroot/ ./wwwroot/
+COPY Program.cs .
+COPY appsettings.json .
+COPY appsettings.Development.json .
 RUN dotnet publish "AMS_26840.csproj" -c Release -o /app/publish
 
 FROM base AS final
