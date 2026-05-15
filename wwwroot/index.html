@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ATM Management System</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Login Screen -->
+    <div id="login-screen" class="card">
+        <h1 id="auth-title">ATM Management System</h1>
+        <p id="auth-subtitle" style="text-align: center; color: var(--text-muted); margin-bottom: 2rem;">Welcome back! Please login.</p>
+        
+        <div id="signup-fields" class="hidden">
+            <div class="input-group">
+                <label>Full Name</label>
+                <input type="text" id="stu-name-input" placeholder="e.g. Bukenya Mustafa">
+            </div>
+        </div>
+
+        <div class="input-group">
+            <label>Account Number</label>
+            <input type="text" id="stu-id" placeholder="e.g. AC001">
+        </div>
+        <div class="input-group">
+            <label>PIN</label>
+            <input type="password" id="stu-pin" placeholder="••••">
+        </div>
+        <button class="btn" id="auth-btn">Login Securely</button>
+        
+        <p style="text-align: center; margin-top: 1.5rem; font-size: 0.9rem;">
+            <span id="toggle-text">Don't have an account?</span> 
+            <a href="#" id="toggle-auth" style="color: var(--primary); font-weight: 600; text-decoration: none;">Create Account</a>
+        </p>
+
+        <p id="auth-error" style="color: var(--error); font-size: 0.8rem; margin-top: 1rem; text-align: center;" class="hidden"></p>
+    </div>
+
+    <!-- Dashboard -->
+    <div id="dashboard" class="hidden">
+        <button class="btn logout-btn btn-secondary" id="logout-btn">Logout</button>
+        
+        <div class="balance-card">
+            <p class="balance-label">Total Balance</p>
+            <p class="balance-amount">RWF <span id="balance">0.00</span></p>
+            <p id="student-name" style="font-weight: 600; opacity: 0.9;"></p>
+        </div>
+
+        <div class="grid">
+            <!-- Actions -->
+            <div class="card" style="max-width: 100%;">
+                <h2>Quick Actions</h2>
+                <div class="input-group">
+                    <label>Action</label>
+                    <select id="action-type">
+                        <option value="deposit">Deposit Money</option>
+                        <option value="pay">WithDraw Cash</option>
+                        
+                    </select>
+                </div>
+
+                <div id="action-fields">
+                    <div class="input-group">
+                        <label>Amount (RWF)</label>
+                        <input type="number" id="action-amount" placeholder="0">
+                    </div>
+                    
+                    <div id="transfer-field" class="input-group hidden">
+                        <label>Receiver Account ID</label>
+                        <input type="text" id="receiver-id" placeholder="ACU002">
+                    </div>
+
+                     <div id="service-field" class="input-group hidden">
+                        <label>Service Type</label>
+                        <select id="service-type">
+                            <option value="0">Dispense Cash</option>
+                            
+                            
+                        </select>
+                    </div> 
+                </div>
+
+                <button class="btn" id="execute-btn">Confirm Transaction</button>
+            </div>
+
+            <div class="card" style="max-width: 100%;">
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
+                    <h2 style="margin: 0;">Reporting System</h2> <br>
+                    <button id="download-csv-btn" class="btn btn-secondary" style="padding: 0.5rem 1rem; font-size: 0.8rem; width: auto; margin: 0; position: relative; z-index: 10;">Download CSV</button>
+                </div>
+                <div class="history-list" id="history-list">
+                    <!-- History items will be injected here -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
